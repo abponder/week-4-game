@@ -59,3 +59,39 @@ body {
   border-bottom: solid;
   border-bottom-color: rgb(129, 40, 40)
 }
+
+ .crystal-image {
+  width: auto;
+  height: auto;
+  max-width: 100px;
+  max-height: 100px;
+}
+
+#capr {
+  /* letter-spacing:2px;
+  font-size:10px;
+  font-family:arial,sans-serif; */
+  text-align: center;
+  color:#f82408fb;
+}
+#capb {
+  /* letter-spacing:2px;
+  font-size:10px;
+  font-family:arial,sans-serif; */
+  text-align: center;
+  color:#1c31ec;
+}
+#capy {
+  /* letter-spacing:2px;
+  font-size:10px;
+  font-family:arial,sans-serif; */
+  text-align: center;
+  color:#e9e513cb;
+}
+#capg {
+  /* letter-spacing:2px;
+  font-size:10px;
+  font-family:arial,sans-serif; */
+  text-align: center;
+  color:#2aee10cb;
+}

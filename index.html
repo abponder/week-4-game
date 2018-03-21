@@ -4,14 +4,14 @@
 
 <head>
 
-    <title>Hangnam Style</title>
+    <title>Crystal Game</title>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="icon" type="image/gif" href="assets/images/img_hangman.png" />
+    <link rel="icon" type="image/gif" href="assets/images/img_crystal.png" />
 
 
 </head>
@@ -28,8 +28,8 @@
 <!-- header Area -->
     <div class="jumbotron jumbotron-fluid jumbo1">
         <div class="container-fluid  jumbo1">
-            <h1 class="display-4  jumbo1">Hangnam Style!</h1>
-            <h3 class= "display-4 text-primary">Psy's Favorite Foods</h3>
+            <h1 class="display-4  jumbo1">Crystal Game!</h1>
+            <h3 class= "display-4 text-primary">Match the Total to Win!</h3>
         </div>
     </div>
 
@@ -40,11 +40,18 @@
 <!-- Left Column Start -->
             <div class="col-md-5 bg-secondary border border-info m=4 p-4 h-100 d-inline-block">
                 <div class="row">
-                    <div class="col-md-12 text-white h4">What is it? ...
+                    <div class="col-md-12 text-white h5">Listing Of the Vars:
                         <hr>
-                        <h2>You just typed <span id="demo0"><strong>...Nothing.</strong></span></h2>
-                        <p>random # between 1 and 9 (both included):  <span id="demo1"><strong>is null</strong></span></p>
-                        <p>random word from list:  <span id="demo2"><strong>is null</strong></span></p>
+                        <h2>Wins:  <span id="wins"><strong></strong></span></h2>
+                        <h2>Losses:  <span id="losses"><strong></strong></span></h2>
+                        <h2>Score: <span id="score"><strong></strong></span></h2>
+                        <h2><span id="winLose"><strong>Good Luck ...</strong></span></h2>
+                        <hr>
+                        <h2>random # between 19 and 120 = <span id="targNum"><strong></strong></span></h2>
+                        <p>random # for crystal Red:  <span id="cryred"><strong>cryred is null</strong></span></p>
+                        <p>random # for crystal Blue:  <span id="cryblu"><strong>cryblu is null</strong></span></p>
+                        <p>random # for crystal Yellow:  <span id="cryyel"><strong>cryyel is null</strong></span></p>
+                        <p>random # for crystal Green:  <span id="crygrn"><strong>crygrn is null</strong></span></p>
 
 
                     </div>
@@ -57,14 +64,61 @@
 <!-- Mid Column End -->
 
 <!-- Right Column Start -->
-            <div class="col-md-5 bg-secondary border border-info m=4 p-4 h-100 d-inline-block">
+            <div class="col-md-6 bg-secondary border border-info m=4 p-4 h-100 d-inline-block">
                 <div class="row">
-                    <div class="col-md-12 text-white h4">Press the Any key to Start!</div>
-                    <hr>
+                        <!-- Red Crystal Start -->
+                        <div class="col-md-3">
+                                <div class="thumbnail">
+                                  <a href="#">
+                                    <img class="crystal-image" data-crystalValue= "5" src="assets/images/img_red.png" alt="redCrystal" style="width:100%">
+                                    <div class="Red Crystal">
+                                      <p id="capr">The Red Crystal!</p>
+                                    </div>
+                                  </a>
+                                </div>
+                        </div>  <!-- Red Crystal End -->
+
+                        <!-- Blue Crystal Start -->
+                        <div class="col-md-3">
+                                <div class="thumbnail">
+                                  <a href="#">
+                                    <img class="crystal-image" data-crystalvalue= "18" src="assets/images/img_blue.png" alt="blueCrystal" style="width:100%">
+                                    <div class="Blue Crystal">
+                                      <p id="capb">The Blue Crystal!</p>
+                                    </div>
+                                  </a>
+                                </div>
+                        </div>  <!-- Blue Crystal End -->
+
+                        <!-- Yellow Crystal Start -->
+                        <div class="col-md-3">
+                                <div class="thumbnail">
+                                  <a href="#">
+                                    <img class="crystal-image" data-crystalvalue= "10" src="assets/images/img_yellow.png" alt="yellowCrystal" style="width:100%">
+                                    <div class="Yellow Crystal">
+                                      <p id="capy">The Yellow Crystal!</p>
+                                    </div>
+                                  </a>
+                                </div>
+                        </div>  <!-- Yellow Crystal End -->
+
+                        <!-- Green Crystal Start -->
+                        <div class="col-md-3">
+                            <div class="thumbnail">
+                              <a href="#">
+                                <img class="crystal-image" data-crystalvalue= "15" src="assets/images/img_green.png" alt="greenCrystal" style="width:100%">
+                                <div class="Green Crystal">
+                                  <p id="capg">The Yellow Crystal!</p>
+                                </div>
+                              </a>
+                            </div>
+                    </div>  <!-- Green Crystal End -->
+
+
                     <div class="col-md-12 text-white h4" id="game"></div>
                 </div>
-                <br>
-                <button type="button" onClick="location.href=location.href" class="btn btn-primary btn-sm">Reset</button>
+                <!--<hr> --->
+                <!--<button type="button" onClick="location.href=location.href" class="btn btn-primary btn-sm">Reset</button> -->
                 <!-- <input type="button" value="Refresh Page" onClick="location.href=location.href" -->
             </div>
 <!-- Right Column End -->
@@ -87,7 +141,6 @@
 
 
 </body>
-
 
 
 
